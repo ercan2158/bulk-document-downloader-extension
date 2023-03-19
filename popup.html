@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        width: 300px;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      input, button {
+        padding: 5px;
+        font-size: 14px;
+      }
+      label {
+        font-weight: bold;
+      }
+      #feedback {
+        font-weight: bold;
+        color: green;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+
+    <label for="linkSelector">All Documents Selector:</label>
+    <input type="text" id="linkSelector" placeholder=".your-link-selector" />
+
+    <label for="timeout">Timeout (ms):</label>
+    <input type="number" id="timeout" placeholder="5000" />
+
+    <button id="downloadBtn">Download All Documents</button>
+    <p id="elementClicked"></p>
+    <p id="feedback">Download completed!</p>
+    <script src="popup.js"></script>
+  </body>
+</html>

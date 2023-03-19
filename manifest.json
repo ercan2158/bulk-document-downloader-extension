@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Document Downloader",
+    "version": "1.0",
+    "description": "Download documents from a table",
+    "permissions": ["downloads", "activeTab"],
+    "browser_action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
